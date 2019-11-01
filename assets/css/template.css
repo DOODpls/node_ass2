@@ -1,0 +1,204 @@
+@import url(/css/reset.css);
+@import url(/css/fonts.css);
+@import url(/css/cards.css);
+
+
+body{
+  margin: 0;
+}
+
+.sidebar {                            /*i decided to make my nav on the side so just i adjust it when resizing on desktop*/
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  list-style-type: none;
+  height: 100vh;
+  width: 4em;
+  background-color: black;
+  font-size: 4vw;
+  overflow: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.navmenu li{
+  font-family: 'Teko', sans-serif;
+  display: flex;
+  justify-content: center;
+  height: 15vh;
+  text-decoration: line-through;
+}
+.navmenu > li > a{
+  color: white;
+  text-decoration: none;
+}
+
+.MainContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.wrapper {
+  display: flex;
+}
+
+html, body {
+  font-family: Open Sans;
+  font-size: 18px;
+  line-height: 28px;
+  scroll-behavior: smooth;
+}
+
+#hero {
+  font-family: 'Teko', sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 10vw;
+  font-weight: 800;
+  line-height: 200px;
+}
+
+.MainContainer {
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.ContentContainer {
+  position: relative;
+  display: block;
+  background-color: white;
+  z-index: 1;
+}
+
+.ParallaxContainer {
+  display: flex;
+  flex: 1 0 auto;
+  position: relative;                             /*this is the part that i took from the internet lol*/
+  z-index: -1;
+  height: 110vh;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  transform: translateZ(-1px) scale(2);
+  background: url(../images/random/30043160557_853bd62415_o.jpg);
+  background-size: cover;
+  background-position: bottom;
+  top: -11vmin;
+  margin: -1vmin;
+}
+p{
+  text-align: justify;
+}
+
+@media (max-width: 600px)  {               /* added this to shift my navbar from side to top for mobile use*/
+  
+  .sidebar {
+    background-color: rgb(0, 0, 0);
+    height: 10vmin;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    
+  }
+  .navmenu{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+    
+  }
+  .navmenu li{
+    font-family: 'Teko', sans-serif;
+    height: 3vh;
+    text-decoration: line-through;
+    font-size: 5vmin;
+  }
+  .navmenu > li > a{
+    color: white;
+    text-decoration: none;
+  }
+}
+h2{
+  font-family: 'Teko', sans-serif;
+}
+.foot{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-size: 2vmin;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.ftlnk{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.formwrapper{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#namee{
+  height: 3vmin;
+  width: 10vmin;
+  font-size: 1.7vmin;
+}
+#emaile{
+  height: 3vmin;
+  width: 10vmin;
+  font-size: 1.7vmin;
+}
+#sends{
+  height: 3vmin;
+    width: 8vmin;
+    font-size: 1.7vmin;
+}
+.formcontainer{
+  margin-left: 20px;
+}
+@media (max-width: 600px)  {
+  .foot{
+    font-size: 3vmin;
+    padding-top: 1vmin;
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 343px)  {
+  .foot{
+    height: 12vw;
+  }
+  #namee{
+    height: 3vmin;
+    width: 8vmin;
+    font-size: 1.7vmin;
+  }
+  #emaile{
+    height: 3vmin;
+    width: 8vmin;
+    font-size: 1.7vmin;
+  }
+  #sends{
+    height: 3vmin;
+    width: 8vmin;
+    font-size: 1.7vmin;
+  }
+  .foot{
+    flex-direction: row;
+  }
+  .formwrapper{
+    align-items: center;
+    justify-items: center;
+  }
+  form > div > div{
+    display: flex;
+    align-items: center;
+  }
+}

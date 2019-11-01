@@ -1,0 +1,121 @@
+
+.imgdesk{
+  padding-top: 10px;
+  margin-top: 50px;
+  font-size: 20px;
+  width: 900px;
+  margin: 50px auto;
+}
+.img{
+  background-image: url('../images/53267015_2320883164609418_1496918092612108288_o.jpg');
+  height: 350px;
+  width: 400px;
+  margin: auto;
+  background-size: cover;
+  clip-path: polygon(100% 0, 0 0, 50% 100%);      /* used this to shape my image to triangle*/
+  background-position: bottom;
+  float: left;
+  shape-outside: polygon(100% 0, 0 0, 50% 100%)    /* used this to shape the border around the image*/
+  
+}
+
+.dscttl{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  line-height: 1.2;
+  float: none;
+}
+.dscpr{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.creds{
+  display: flex;
+  justify-content: center;
+}
+#par, #cards{
+  height: 45px;
+  width: 120px;                             /* added a links on the things that i used from the web*/
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 0;
+  border: solid 1px transparent;
+  border-radius: 50px;
+  padding: 0.5em 1em;
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+  font-size: 15px;
+  margin: 10px;
+}
+
+@media (max-width: 1200px)  {
+
+  .dscttl{
+    margin: auto;
+    font-size: 30px;
+  }
+
+  .img{
+    height: 275px;
+    width: 300px;
+  }
+  
+  .imgdesk{
+    font-size: 18px;
+    width: 90vw;
+    margin: 66px;
+  }
+  .aboutbod{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 780px)  {
+
+  .dscttl{
+    display: flex;
+    justify-content: center;
+    font-size: 5vmin;
+    padding-top: 5vmin;
+    padding-bottom: 0;
+  }
+
+  .dscpr{
+    margin-top: -2vmin;
+    font-size: 3vmin;
+  }
+
+  .img{
+    height: 35vmin;
+    width: 37vmin;
+    float: none;
+  }
+  
+  .imgdesk{
+    font-size: 12px;
+    width: 90vw;
+    margin: 10vmin;
+  }
+  .aboutbod{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px)  {
+
+  
+  .imgdesk{
+    margin: 15vmin;
+  }
+
+  #par, #cards{
+    height: 7vmin;
+    width: 20vmin;
+    font-size: 3vmin;
+    margin: 1vmin;
+  }
+}

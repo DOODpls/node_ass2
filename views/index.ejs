@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/template.css">
+  <link rel="stylesheet" href="fontawesome-free-5.10.2-web/css/all.css">
+  <link rel="stylesheet" href="css/index.css">
+  <title><%= title %></title>
+  <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+  <div class="wrapper">
+    <%- include partials/header%>
+    <div class="MainContainer">
+          <div class="ParallaxContainer">
+            <h1 id="hero">
+              <%= hero %>
+            </h1>
+          </div>
+      <div class="ContentContainer">
+        <section id="cards">	
+          <div class="blog-card spring-fever" id="card1">
+            <div class="title-content">
+              <h3><a href="gallery#gal1"><%= linkalbum1.albumtitle %></a></h3>
+              <div class="intro"> <a href="https://maps.google.com"><%= linkalbum1.location %></a> </div>
+            </div>
+            <div class="card-info">
+              <%= linkalbum1.description %>
+            </div>
+            <div class="utility-info">
+              <ul class="utility-list">
+                <li><span class="licon icon-dat"></span><%= linkalbum1.date %></li>
+              </ul>
+            </div>
+            <div class="gradient-overlay"></div>
+            <div class="color-overlay"></div>
+          </div><!-- /.blog-card -->
+          <div class="blog-card spring-fever" id="card2">
+            <div class="title-content">
+              <h3><a href="gallery#gal2"><%= linkalbum2.albumtitle %></a></h3>
+              <div class="intro"> <a href="https://www.google.ca/maps/place/Mt.+Daraitan/@14.6131553,121.4254799,18771m/data=!3m1!1e3!4m5!3m4!1s0x339793b8efed4289:0xb7408afa94e949a1!8m2!3d14.6136855!4d121.43873"><%= linkalbum2.location %></a> </div>
+            </div>
+            <div class="card-info">
+              <%= linkalbum2.description %>
+            </div>
+            <div class="utility-info">
+              <ul class="utility-list">
+                <li><span class="licon icon-dat"></span><%= linkalbum2.date %></li>
+              </ul>
+            </div>
+            <div class="gradient-overlay"></div>
+            <div class="color-overlay"></div>
+          </div>
+          <div class="blog-card spring-fever" id="card3">
+            <div class="title-content">
+              <h3><a href="gallery#gal3"><%= linkalbum3.albumtitle %></a></h3>
+              <div class="intro"> <a href="https://www.google.ca/maps/place/Banff,+AB/@51.1770695,-115.5767362,11538m/data=!3m1!1e3!4m5!3m4!1s0x5370ca45910c4afd:0xcaafaebedaac9463!8m2!3d51.1783972!4d-115.5708074"><%= linkalbum3.location %></a> </div>
+            </div>
+            <div class="card-info">
+              <%= linkalbum3.description %>
+            </div>
+            <div class="utility-info">
+              <ul class="utility-list">
+                <li><span class="licon icon-dat"></span><%= linkalbum3.date %></li>
+              </ul>
+            </div>
+            <div class="gradient-overlay"></div>
+            <div class="color-overlay"></div>
+          </div>
+            <div class="blog-card spring-fever" id="card4">
+              <div class="title-content">
+                <h3><a href="gallery#gal4"><%= linkalbum4.albumtitle %></a></h3>
+                <div class="intro"> <a href="https://www.google.ca/maps/place/Calgary+Stampede/@51.0397168,-114.0561059,3427m/data=!3m1!1e3!4m5!3m4!1s0x5371700f43d37c67:0x2be2513bea71cbec!8m2!3d51.0379127!4d-114.0532016"><%= linkalbum4.location %></a> </div>
+              </div>
+              <div class="card-info">
+                <%= linkalbum4.description %>
+              </div>
+              <div class="utility-info">
+                <ul class="utility-list">
+                  <li><span class="licon icon-dat"></span><%= linkalbum4.date %></li>
+                </ul>
+              </div>
+              <div class="gradient-overlay"></div>
+              <div class="color-overlay"></div>
+            </div>
+        </section>
+      </div>
+      <%- include partials/footer%>
+    </div>
+  </div>
+</body>
+</html>

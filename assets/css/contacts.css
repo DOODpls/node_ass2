@@ -1,0 +1,120 @@
+
+
+.ContentContainer{
+  display: flex;
+  justify-content: center;
+}
+.cnctme{
+  padding-top: 20vmin;
+  padding-bottom: 20vmin;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+.formcont{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50vw;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 10px 10px 20px;
+  border-radius: 5%;
+}
+
+#cnthd{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+#textarea{
+  width: 40vw;
+  border: 1px solid black;
+  resize: none;
+  font-size: 15px;
+}
+#name, #email{
+  border: 1px solid black;
+  width: 200px;
+  height: 30px;
+  font-size: 15px;
+}
+#htwo{
+  padding-top: 20px;
+  margin: auto;
+  padding-bottom: 30px;
+  font-size: 50px;
+}
+#btnhd{
+  display: flex;
+  justify-content: flex-end;
+}
+#reset, #send{                    /*these are my links to things that i used for my project*/
+  height: 45px;
+  width: 120px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 0;
+  border: solid 1px transparent;
+  border-radius: 50px;
+  padding: 0.5em 1em;
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
+  font-size: 15px;
+  margin: 10px;
+}
+
+@media (max-width: 1000px)  {
+
+  #htwo{
+    font-size: 40px;
+  }
+  .formcont{
+    width: 60vw;
+  }
+  #textarea{
+    width: 50vw;
+    resize: none;
+    font-size: 15px;
+  }
+  #name, #email{
+    width: 150px;
+    height: 20px;
+    font-size: 15px;
+  }
+  
+}
+
+@media (max-width: 600px)  {
+
+  #htwo{
+    font-size: 7vmin;
+  }
+  .formcont{
+    width: 80vw;
+    font-size: 4vmin;
+  }
+  #textarea{
+    width: 70vw;
+    height: 30vw;
+    resize: none;
+    font-size: 15px;
+  }
+  #name, #email{
+    width: 40vw;
+    height: 5vw;
+    font-size: 15px;
+  }
+
+  #reset, #send{
+    height: 7vmin;
+    width: 20vmin;
+    font-size: 3vmin;
+    margin: 1vmin;
+  }
+  
+}

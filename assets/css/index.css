@@ -1,0 +1,21 @@
+
+#card1, #card2, #card3, #card4{
+  width: 400px;
+}
+
+#cards{
+  display: flex;                        /* had to use flex so i can easily position my cards on the middle of the screen*/
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 10vmin;
+  padding-bottom: 10vmin;
+}
+
+@media (max-width: 550px)  {
+
+  #cards{
+    padding: 0;
+  }
+
+}

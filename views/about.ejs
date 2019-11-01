@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/template.css">
+  <link rel="stylesheet" href="fontawesome-free-5.10.2-web/css/all.css">
+  <link rel="stylesheet" href="css/about.css">
+  <title><%= title %></title>
+  <link rel="icon" href="./images/favicon.ico">
+</head>
+<body>
+    <div class="wrapper">
+      <%- include partials/header %>
+        <div class="MainContainer">
+          <div class="ParallaxContainer">
+            <h1 id="hero">
+              <%= hero %>
+            </h1>
+          </div>
+          <div class="ContentContainer">
+            <div class="aboutbod">
+              <div class="imgdesk">
+              <div class="img">
+              </div>
+              <h1 class="dscttl">About this Project.</h1>
+              <br>
+              <br>
+                  <p class="dscpr">
+                    This project is all about making a portfolio and putting everthing what we have learned on our course Web Page Construction Fundamentals. So I decided to make a photography/adventure portfolio. I used different method to complete my website. The most important ones are grid and flexbox, those two made my work so much easier. Flexbox is a thing that made aligning columns and rows easily, you can choose what direction your flexbox will go, horizontally or vertically. I found It very useful when making a navigation bar and centering stuff on your webpage. On the other hand Grid is by far more superior because you can set grids and play everything within it. You can configure it by rows x columns and put your stuff in grid cells, you can do overlapping too. I found it very useful when placing each section of your website specifically, like a template that you can use on every page of your website. As a Web Development student that struggles on positioning, those two layout methods really help me a lot.</p>
+              </div>
+          </div>
+          <div class="creds">
+            <input type="button" value="Parallax" id="par" onclick="window.location.href = 'https://codepen.io/karldanninger/pen/NwzMzN';">
+            <input type="button" value="Cards" id="cards" onclick="window.location.href = 'https://codepen.io/nodws/pen/ZpZjpQ';">
+          </div>
+        </div>
+        <%- include partials/footer %>
+      </div>
+    </div>
+    
+</body>
+</html>
